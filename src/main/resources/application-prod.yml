@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: utf-8
+
+spring:
+  datasource:
+    url: MYSQLURL
+    driver-class-name: MYSQLDriver
+    username: MYSQLUser
+    password: MYSQLPW
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+logging:
+  level:
+    '[org.springframework.web]': INFO
+    '[org.hibernate]': INFO 
