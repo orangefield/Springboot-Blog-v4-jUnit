@@ -5,8 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
+@EqualsAndHashCode // 주소 비교를 하지 않고 값만 비교한다
 @Getter
 @Entity
 public class Book {
@@ -17,7 +20,9 @@ public class Book {
     private String title;
     private String author;
 
-    public Book(String title, String author) {
+    @Builder
+    public Book(Long id, String title, String author) {
+        this.id = id;
         this.title = title;
         this.author = author;
     }

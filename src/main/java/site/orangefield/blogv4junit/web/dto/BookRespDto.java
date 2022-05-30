@@ -1,7 +1,9 @@
 package site.orangefield.blogv4junit.web.dto;
 
+import lombok.Getter;
 import site.orangefield.blogv4junit.domain.book.Book;
 
+@Getter
 public class BookRespDto {
     private Long id;
     private String title;

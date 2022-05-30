@@ -10,6 +10,6 @@ public class BookSaveReqDto {
     private String author;
 
     public Book toEntity() {
-        return new Book(this.title, this.author);
+        return Book.builder().title(this.title).author(this.author).build();
     }
 }
