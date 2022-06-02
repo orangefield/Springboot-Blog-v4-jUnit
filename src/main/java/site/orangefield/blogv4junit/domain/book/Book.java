@@ -8,7 +8,9 @@ import javax.persistence.Id;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @EqualsAndHashCode // 주소 비교를 하지 않고 값만 비교한다
 @Getter
 @Entity

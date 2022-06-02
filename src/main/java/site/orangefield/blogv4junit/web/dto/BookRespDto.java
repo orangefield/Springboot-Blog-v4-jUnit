@@ -1,8 +1,14 @@
 package site.orangefield.blogv4junit.web.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import site.orangefield.blogv4junit.domain.book.Book;
 
+@EqualsAndHashCode
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 public class BookRespDto {
     private Long id;
